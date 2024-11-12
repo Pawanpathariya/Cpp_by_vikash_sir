@@ -4,7 +4,7 @@ using namespace std;
 void table(int a,int s=1){
     if(s>10){ 
     return ;}
-    cout<<a<<" * "<<s<<" = "<<a*s<<"\n";
+    cout<<a<<" * "<<s<<" = "<<a*s<<"\n"; 
     table(a,s+1);}
 
 int main(){
