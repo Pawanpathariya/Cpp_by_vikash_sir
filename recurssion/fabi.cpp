@@ -1,18 +1,15 @@
-//wap to find fabinoci series using recurssion
+//wap to find nth term in fabinoci series using recurssion
 #include <iostream>
-int c;
 using namespace std;
-int fibonacci(int n,int a=0,int b=1) {
-    if (n <= 1) {
-        return c;
-    }
-  c=a+b;
-  fibonacci(n-1,b,c);
+int fibonacci(int n) {
+    if (n<=1) {
+        return 1; 
+        }
+return fibonacci(n-1)+fibonacci(n-2);
 }
-int main() {
+int main(){
     int n;
-    cout << "Enter number: ";
-    cin >> n;
-    cout << fibonacci(n) << endl;
-
+    cout<<"Enter nth number: ";
+    cin>>n;
+    cout<<fibonacci(n)<<endl;
 }
