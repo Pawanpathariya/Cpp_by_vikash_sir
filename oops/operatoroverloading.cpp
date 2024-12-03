@@ -6,25 +6,26 @@ note: it is use to solve the complex data type
 #include<iostream>
 using namespace std;   
 class Top{
-int a;
+int a,b;
 public:
-Top(int x){
+Top(int x,int y){
     a=x;
+    b=y;
 }
-void operator++(){
-    a++;
-    cout<<a<<endl;
-}
-void operator--(){
-    a--;
-    cout<<a<<endl;
+Top operator+(Top obj){
+    Top t(obj);
+    t.a=a+obj.a;  
+     t.b=b+obj.b;
+     cout<<"kg = "<<t.a<<endl;
+     cout<<"gm = "<<t.b<<endl;
+     return t;
 }
 
 };
 int main(){
-Top obj(12);
-++obj;
---obj;
+Top obj(12,14);
+Top obj2(12,14);
+obj+obj2;
 }
 
 
