@@ -29,17 +29,31 @@ using namespace std;
 
 class cybrom{
   public:
-  int a;
+  int * a;
   cybrom(int x){
-    a=x;
+    a=new int;
+   *a=x;
   }
 
+  cybrom(cybrom &obj){
+    *a=*obj.a;
+  }
+void change(int d){
+    *a=d;
+}
   void display(){
-    cout<<"The value of a is "<<a<<endl;
+    cout<<"The value of a is "<<*a<<endl;
   }
 };
 
 
 int main(){
+cybrom obj(12);
+obj.display();
+cybrom obj2(obj);
+obj2.display();
+obj.change(13);
+obj.display();
+obj2.display();
 
 }
