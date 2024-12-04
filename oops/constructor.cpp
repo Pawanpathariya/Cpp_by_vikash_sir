@@ -46,7 +46,7 @@ void change(int d){
   }
 };
 
-
+    
 int main(){
 cybrom obj(12);
 obj.display();
