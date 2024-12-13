@@ -34,6 +34,6 @@ int main(){
   ptr=&obj1;
   ptr->helpdesk(); 
   ICICI obj2;
-  ptr=&obj2;
+  ptr=&obj2; 
   ptr->helpdesk();
   }
