@@ -5,9 +5,7 @@ using namespace std;
 class RBI{
   public:
   virtual void helpdesk()=0; 
-  void fun(){
-    cout<<"\n";
-  } 
+
 };
 
 class SBI : public RBI{
@@ -31,11 +29,11 @@ class ICICI : public RBI{
 };  
 
 int main(){ 
-  RBI *ptr;
+  RBI *ptr; 
   SBI obj1;
   ptr=&obj1;
-  obj1.helpdesk();
+  ptr->helpdesk(); 
   ICICI obj2;
   ptr=&obj2;
-  obj2.helpdesk();
+  ptr->helpdesk();
   }
