@@ -14,7 +14,7 @@ Deep(Deep &obj){
     strcpy(name,obj.name);
 }
 
-void concate(char *s){
+void concate(char *s){  
     strcat(name,s);
 }
 
