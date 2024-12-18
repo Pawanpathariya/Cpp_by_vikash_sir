@@ -18,7 +18,7 @@ void concate(char *s){
     strcat(name,s);
 }
 
-void display(){
+ void display(){
     cout<<"Full name "<<name<<endl;
 }
 };
